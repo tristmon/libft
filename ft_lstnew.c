@@ -6,7 +6,7 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 12:00:43 by trmonich          #+#    #+#             */
-/*   Updated: 2018/11/19 10:51:31 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/11/13 20:40:18 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		return (list);
 	}
 	if (!(list->content = ft_memalloc(content_size)))
-	{
-		free(list);
 		return (NULL);
-	}
 	list->content = ft_memcpy(list->content, content, content_size);
 	list->next = NULL;
 	list->content_size = content_size;
