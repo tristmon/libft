@@ -6,7 +6,7 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 14:08:42 by trmonich          #+#    #+#             */
-/*   Updated: 2018/11/16 12:56:12 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/11/29 11:38:13 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,6 @@ int					ft_power(int nb, int power);
 void				ft_putnbr_base(int nb, char *base);
 int					ft_isspace(int c);
 int					ft_iscntrl(int c);
+void				ft_lstappend(t_list **alst, t_list *new);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: trmonich <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 16:34:09 by trmonich          #+#    #+#              #
-#    Updated: 2018/11/16 12:56:14 by trmonich         ###   ########.fr        #
+#    Updated: 2018/11/29 11:37:48 by trmonich         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,6 +77,7 @@ SRCS = ft_bzero.c \
 	ft_isspace.c \
 	ft_iscntrl.c \
 	ft_strndup.c \
+	ft_lstappend.c \
 	ft_strcapitalize.c
 OBJS = $(SRCS:.c=.o)
 
