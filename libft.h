@@ -6,14 +6,21 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 14:08:42 by trmonich          #+#    #+#             */
-/*   Updated: 2018/11/29 11:38:13 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/11/29 15:02:40 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <unistd.h>
+# include <stdlib.h>
 # include <string.h>
+
+# define BUFF_SIZE 15
+
 
 typedef struct		s_list
 {
@@ -90,5 +97,6 @@ void				ft_putnbr_base(int nb, char *base);
 int					ft_isspace(int c);
 int					ft_iscntrl(int c);
 void				ft_lstappend(t_list **alst, t_list *new);
+int					get_next_line(const int fd, char **line);
 
 #endif
