@@ -98,5 +98,6 @@ int					ft_isspace(int c);
 int					ft_iscntrl(int c);
 void				ft_lstappend(t_list **alst, t_list *new);
 int					get_next_line(const int fd, char **line);
+int					ft_lstcount(t_list *lst);
 
 #endif
