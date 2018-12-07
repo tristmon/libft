@@ -6,7 +6,7 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 14:08:42 by trmonich          #+#    #+#             */
-/*   Updated: 2018/12/07 08:40:35 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/12/07 08:44:25 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,5 @@ int					ft_isspace(int c);
 int					ft_iscntrl(int c);
 void				ft_lstappend(t_list **alst, t_list *new);
 int					get_next_line(const int fd, char **line);
-int					ft_lstcount(t_list *lst);
 
 #endif
