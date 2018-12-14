@@ -6,7 +6,7 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/14 11:59:15 by trmonich          #+#    #+#             */
-/*   Updated: 2018/12/14 12:01:46 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:17:27 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_show_table(char **tab)
 	i = 0;
 	while (tab[i])
 	{
-		ft_putstr(tab[i]);
+		ft_putendl(tab[i]);
 		i++;
 	}
 }
