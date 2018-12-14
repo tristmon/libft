@@ -6,7 +6,7 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 14:08:42 by trmonich          #+#    #+#             */
-/*   Updated: 2018/12/11 12:45:15 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:01:45 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ typedef struct		s_list
 void				*ft_memset(void *b, int c, size_t len);
 int					ft_min(int x, int y);
 int					ft_lstlen(t_list *lst);
-void				*ft_bzero(void *s, size_t len);
+void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t n);
@@ -100,5 +100,6 @@ int					ft_isspace(int c);
 int					ft_iscntrl(int c);
 void				ft_lstappend(t_list **alst, t_list *new);
 int					get_next_line(const int fd, char **line);
+void				ft_show_table(char **tab);
 
 #endif
