@@ -6,13 +6,13 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 15:34:28 by trmonich          #+#    #+#             */
-/*   Updated: 2018/11/06 15:34:30 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:15:40 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_bzero(void *s, size_t len)
+void	ft_bzero(void *s, size_t len)
 {
 	size_t		i;
 
@@ -22,5 +22,4 @@ void	*ft_bzero(void *s, size_t len)
 		((unsigned char*)s)[i] = 0;
 		i++;
 	}
-	return (s);
 }
