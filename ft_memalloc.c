@@ -6,7 +6,7 @@
 /*   By: trmonich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 14:58:26 by trmonich          #+#    #+#             */
-/*   Updated: 2018/11/08 15:09:05 by trmonich         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:20:16 by trmonich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@ void	*ft_memalloc(size_t size)
 	new_zone = malloc(sizeof(*new_zone) * size);
 	if (!new_zone)
 		return (NULL);
-	return (ft_bzero(new_zone, size));
+	ft_bzero(new_zone, size)
+	return (new_zone);
 }
